@@ -1,0 +1,189 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Prodcut 1",
+    price: 100
+  },
+  {
+    _id: 2,
+    name: "Prodcut 2",
+    price: 20
+  },
+  {
+    _id: 3,
+    name: "Prodcut 3",
+    price: 120
+  },
+  {
+    _id: 4,
+    name: "Prodcut 4",
+    price: 120
+  },
+  {
+    _id:1,
+    title:"cepillo para pelos",
+    price: 3000,
+    description: "Cepillo para el retiro de pelos en tu ropa y muebles",
+    category:"mascotas",
+    img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fmarcagato.co%2Fproducto%2Fcepillo-quita-motas%2F&psig=AOvVaw2GBIgx4APTB4LAGPC0Lh8H&ust=1700697306096000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMC_nP2m1oIDFQAAAAAdAAAAABAE"
+  },
+  {
+    _id:2,
+    title:"Jueguete para perro",
+    price:5000,
+    description:"Correa con aros para que tu perro muerda",
+    category:"Mascotas",
+    img:"https://http2.mlstatic.com/D_NQ_NP_884396-MCO69690520497_052023-O.webp"
+  },
+  {
+    _id:3,
+    title:"Cama para perros",
+    price:10000,
+    description:"Cama para perro la mayor calidad",
+    category:"Mascotas",
+    img:"https://homecenterco.scene7.com/is/image/SodimacCO/879639?fmt=webp&fit=fit,1&wid=420&hei=420"
+  },
+  {
+    _id:4,
+    title:"Tapete absorvete",
+    price:20000,
+    description:"Tapete para evitar accidentes de tu mascota en casa",
+    category:"Mascotas",
+    img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petys.com%2Fproductos%2Ftapetes-absorbentes-extra-gruesos-para-perros%2F&psig=AOvVaw1R3tTLTFpEMV652vIi6eqK&ust=1700697358037000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCo2pin1oIDFQAAAAAdAAAAABAJ"    
+  },
+  {
+    _id:5,
+    title:"Espuma para baño",
+    price:10000,
+    description:"Espuma que elimina el 99.9% de las bacterias de tu amigo peludo",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/shampoo-en-seco-perro-gato.png"
+  },
+  {
+    _id:6,
+    title:"Mata Pulgas",
+    price:5000,
+    description:"Mata pulgas para tu mejor amigo",
+    category:"Mascotas",
+    img:"https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/5/1/5151251235123020002-min.jpg"
+  },
+  {
+    _id:7,
+    title:"Cubierta para auto movil",
+    price:50000,
+    description:"lleva a tu amigo peludoa todos lados con nuestro protector de silla",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/cubierta-asiento-perro-coche.png"
+  },
+  {
+    _id:8,
+    title:"Removedor de pelos de mascota",
+    price:60000,
+    description:"Remueve los perros de tu amigo canino con este producto",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/quitapelos-removedor-pelos-mascota.png"
+  },
+  {
+    _id:9,
+    title:"Arena para Gatos",
+    price:7000,
+    description:"para los malos olores de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/fresh-step-gato-arena.png"  
+  },
+  {
+    _id:10,
+    title:"Medio de transporte para gatos",
+    price:100000,
+    description:"para que lleves a tu amigo a todos lados",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/tapete-litera-gato.png"
+  },
+  {
+    _id:11,
+    title:"limpia patitas de perro y gato",
+    price:10000,
+    description:"para dar la mejor presentacion a tu amigo peludo",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/limpiador-patitas-perro-gato.png"
+  },
+  {
+    _id:12,
+    title:"Fuente de agua para gato y perro",
+    price:100000,
+    description:"Una forma diferente de toamr agua",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/fuente-gato-bebedero-perro.png"
+  },
+  {
+    _id:13,
+    title:"Cepillo de dientes",
+    price:10000,
+    description:"muerde muerde para una mejor limpieza",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/perros-cepillo-de-dientes.png"
+  },
+  {
+    _id:14,
+    title:"Eliminador de olores",
+    price:20000,
+    description:"Elimina los malos olores de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://cnnespanol.cnn.com/wp-content/uploads/2021/08/cloralex-mascotas.png"
+  },
+  {
+    _id:15,
+    title:"Shampoo para perros y gatos",
+    price:20000,
+    description:"Elimina los malos olores de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://images.ctfassets.net/ozvjkvyngwhv/GW5VtleokYT6biw18Oa5I/d53cd6c7a0bf27fba500bc6ec5d667b8/4_Productos_P__ginaWeb.png" 
+  },
+  {
+    _id:16,
+    title:"Shampoo para Perros Insecticida 1 Litro",
+    price:20000,
+    description:"Elimina los malos olores de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/5/1/5151251235123020001-min.jpg"
+  },
+  {
+    _id:17,
+    title:"Talco desodorante para perros",
+    price:20000,
+    description:"Elimina los malos olores de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://animalscenter.com/1633-home_default/talco-desodorante-para-perros-canamor-100-g.jpg"
+  },
+  {
+    _id:18,
+    title:"Croquetas para perro",
+    price:20000,
+    description:"Premios para tu amigo",
+    category:"Mascotas",
+    img:"https://http2.mlstatic.com/D_NQ_NP_909981-MCO52644831522_112022-O.webp"
+  },
+  {
+    _id:19,
+    title:"Jabón para perro",
+    price:20000,
+    description:"Mata el 99.9% de las bacterias",
+    category:"Mascotas",
+    img:"https://www.dipresmascotas.com/wp-content/uploads/strikingr/images/564_asuntol-jabon-339x377.jpg"  
+  },
+  {
+    _id:20,
+    title:"Dentalife",
+    price:20000,
+    description:"Manten fuerte los dientes de tu peludo amigo",
+    category:"Mascotas",
+    img:"https://purina.com.co/sites/default/files/styles/webp/public/2022-10/purina-dentalife-perro-pequenio.png.webp?itok=M89bbnSj"
+  }
+
+])
